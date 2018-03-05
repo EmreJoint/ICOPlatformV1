@@ -1,0 +1,21 @@
+﻿
+@{
+	ViewData["Title"] = "Contract İşlemleri";
+}
+
+<h3>Contract İşlemleri</h3>
+@using (Html.BeginForm("SetContract", "Contract", FormMethod.Post))
+{
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="col-sm-8">
+					@Html.DropDownList("ContractList", null, new { @class = "form-control" })
+				</div>
+				<div class="col-sm-4">
+					<input id="Submit1" type="submit" value="Submit" class="btn-primary" />
+				</div>			
+			</div>
+		</div>
+	</div>
+}

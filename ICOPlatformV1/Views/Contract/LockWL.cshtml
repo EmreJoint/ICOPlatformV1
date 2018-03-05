@@ -1,0 +1,19 @@
+﻿@*@using (Html.BeginForm("LockWL", "Contract", FormMethod.Post))
+{*@
+
+
+	<div class="form-group">
+		<input type="checkbox" checked data-toggle="toggle" data-on="Aktif" data-off="Pasif" data-onstyle="success" data-offstyle="danger" name="chkLockWl">
+	</div>
+	<div class="form-group">
+		<label for="lockAddress">Eth Address</label>
+		<div class="input-group">
+			<input class="form-control" id="lockAddress" type="text" name="lockAddress">
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="submit" id="lockWL">Go</button>
+			</span>
+		</div>
+	</div>
+
+@*  *@}
+

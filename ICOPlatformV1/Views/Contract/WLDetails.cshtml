@@ -1,0 +1,34 @@
+﻿@model WLType
+
+<div class="form-group">
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="Eth Adresi.." id="EthAddress">
+		<span class="input-group-btn">
+			<button class="btn btn-primary" type="button" id="GetDetails" onclick="GetDetails()">Detaylar</button>
+		</span>
+	</div>
+</div>
+<div class="form-group">
+	<label for="active">Aktif</label>
+	@Html.CheckBoxFor(m => m.active, new { @class = "checkbox", data_toggle = "toggle", data_on = "Aktif", data_off = "Pasif", data_onstyle = "success", data_offstyle = "danger", @disabled = "disabled" })
+
+</div>
+<div class="form-group">
+	<label for="amount">Toplam Yatırım</label>
+	@Html.TextBoxFor(m => m.amount, null, new { @class = "form-control", @readonly = "readonly" })
+</div>
+<div class="form-group">
+	<label for="min">Minimum Tutar</label>
+	@Html.TextBoxFor(m => m.min, null, new { @class = "form-control", @readonly = "readonly" })
+</div>
+
+<div class="form-group">
+	<label for="max">Maksimum tutar</label>
+	@Html.TextBoxFor(m => m.max, null, new { @class = "form-control", @readonly = "readonly" })
+</div>
+
+<div class="form-group">
+<label for="active">In List?</label>
+@Html.CheckBoxFor(m => m.flag, new { @class = "checkbox", data_toggle = "toggle", data_on = "In List", data_off = "Not In List", data_onstyle = "success", data_offstyle = "danger", @disabled = "disabled" })
+
+</div>

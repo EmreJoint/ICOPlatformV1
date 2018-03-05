@@ -1,0 +1,23 @@
+﻿
+@if (TempData["result"] == "success")
+{
+	<div class="alert alert-success alert-dismissible">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<strong>Success!</strong> This alert box could indicate a successful or positive action.
+	</div>
+}
+	<div class="form-group">
+		<label for="address">Eth Address</label>
+		<input class="form-control" id="address" type="text" name="address">
+	</div>
+	<div class="form-group">
+		<label for="min">Min Cap</label>
+		<input class="form-control" id="min" type="number" name="min">
+	</div>
+	<div class="form-group">
+		<label for="max">Max Cap</label>
+		<input class="form-control" id="max" type="number" name="max">
+	</div>
+	<div class="form-group">
+		<input type="submit" value="Ekle" class="btn-primary form-control">
+	</div>
